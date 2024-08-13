@@ -8,6 +8,9 @@ st.title('문장 바이트 수 계산 및 맞춤법 검사기 📝')
 # 검사할 문장 입력 받기
 sentence = st.text_area('검사할 문장을 입력해 주세요!')
 
+# 이름 입력 받기
+name = st.text_input('이름을 입력해주세요!')
+
 # 바이트 수 계산 함수
 def calculate_byte_size(text):
     return len(text.encode('utf-8'))
